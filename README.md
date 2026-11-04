@@ -2,7 +2,7 @@
 
 > 输入生辰 → 确定性排盘 → 规则引擎判格局 → RAG 检索命理知识 → DeepSeek 流式推理 → React 动画呈现。
 
-当前状态：**初始化阶段**（环境、测试骨架已就绪，开始实现排盘内核）。
+当前状态：**第一阶段开发中**（环境、测试骨架、FastAPI 基础接口已就绪，下一步实现排盘内核）。
 
 - 第一阶段：排盘、规则、RAG、流式解读、历史记录、React 动画
 - 第二阶段：手相照片上传与命盘互证（Qwen-VL）
@@ -82,9 +82,12 @@ cp .env.example .env
 # 填入 DeepSeek key
 conda create -n ziwei python=3.11 -y
 conda activate ziwei
-pip install -r backend/requirements.txt   # 待 M1 创建
-python scripts/dev.py                     # 待 M2 创建
+pip install -r backend/requirements.txt
+cd backend
+python -m uvicorn app.main:app --reload
 ```
+
+打开 <http://127.0.0.1:8000/docs> 查看自动生成的接口文档。
 
 ## 许可与声明
 
