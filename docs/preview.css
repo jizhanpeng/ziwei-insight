@@ -1,0 +1,157 @@
+:root {
+  --ink: #24292f;
+  --muted: #57606a;
+  --line: #d8dee4;
+  --soft: #f6f8fa;
+  --accent: #8a5a2b;
+  --accent-soft: #f6ede3;
+}
+
+body {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 32px 40px 96px;
+  color: var(--ink);
+  font-family: "Source Han Sans SC", "Microsoft YaHei", "PingFang SC",
+    system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.35;
+  font-weight: 650;
+}
+
+h1 {
+  margin-top: 0;
+  padding-bottom: 0.35em;
+  border-bottom: 2px solid var(--accent);
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 2.4em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.45rem;
+}
+
+h3 {
+  margin-top: 1.8em;
+  font-size: 1.18rem;
+}
+
+h4 {
+  margin-top: 1.4em;
+  font-size: 1.02rem;
+  color: var(--muted);
+}
+
+p {
+  margin: 0.75em 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  margin: 1.1em 0;
+  border-collapse: collapse;
+  font-size: 0.94em;
+  line-height: 1.6;
+}
+
+th,
+td {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background: var(--soft);
+  font-weight: 650;
+}
+
+tr:nth-child(even) td {
+  background: #fbfcfd;
+}
+
+code {
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+  background: var(--soft);
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  margin: 1.1em 0;
+  padding: 16px 18px;
+  border-radius: 8px;
+  background: #0d1117;
+  color: #e6edf3;
+  overflow-x: auto;
+  line-height: 1.55;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 0.9em;
+}
+
+blockquote {
+  margin: 1.2em 0;
+  padding: 0.6em 1em;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  color: #4a3826;
+}
+
+blockquote p {
+  margin: 0.3em 0;
+}
+
+ul,
+ol {
+  padding-left: 1.6em;
+}
+
+li {
+  margin: 0.3em 0;
+}
+
+hr {
+  margin: 2.6em 0;
+  border: none;
+  border-top: 1px solid var(--line);
+}
+
+strong {
+  font-weight: 650;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media print {
+  body {
+    max-width: none;
+    padding: 0;
+  }
+}
